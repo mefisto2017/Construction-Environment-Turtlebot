@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="street">
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://street/meshes/road.dae</uri>
+              <scale>0.05 0.05 0.05</scale>
+            </mesh>
+          </geometry>
+        </visual>      
+      </link>   
+  </model>
+</sdf>
+

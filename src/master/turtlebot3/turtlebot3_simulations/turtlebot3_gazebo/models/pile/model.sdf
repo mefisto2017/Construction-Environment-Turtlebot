@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="pile">
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pile/meshes/pile.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>      
+      </link>   
+  </model>
+</sdf>
+

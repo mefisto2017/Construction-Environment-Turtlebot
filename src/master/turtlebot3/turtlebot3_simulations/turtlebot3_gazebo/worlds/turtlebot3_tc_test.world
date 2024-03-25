@@ -1,0 +1,219 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <!-- We use a custom world for the rrbot so that the camera angle is launched correctly -->
+
+  <world name="default">
+
+    <!-- Camera initial position -->
+  <gui>
+    <camera name="user_camera">
+      <pose>-2.858632 -7.018673 2.981826 0 0.331643 0.880191</pose>
+    </camera>
+  </gui>
+
+      <!--<scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+    </scene> -->
+
+  <include>
+    <uri>model://my_ground_plane</uri>
+  </include>
+
+    <model name="fence1">
+      <include>
+        <pose>0 5.2 0 0.0 0.0 0.0</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="fence2">
+      <include>
+        <pose>5.1 0 0 0.0 0.0 3.141592654</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="fence3">
+      <include>
+        <pose>0 5.2 0 0.0 0.0 1.570796327</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="fence4">
+      <include>
+        <pose>0 0 0 0.0 0.0 0.0</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="fence5">
+      <include>
+        <pose>5.1 -5.2 0 0.0 0.0 3.141592654</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="fence6">
+      <include>
+        <pose>0 -5.2 0 0.0 0.0 1.570796327</pose>
+        <uri>model://fence</uri>
+      </include>
+    </model>
+
+    <model name="pipe">
+      <include>
+        <pose>2.90 -0.6 0.1 0.0 0.0 0.3</pose>
+        <uri>model://pipe</uri>
+      </include>
+    </model>
+
+    <model name="madera">
+      <include>
+        <pose>4.3 3.7 0 0.0 0.0 0.34</pose>
+        <uri>model://madera</uri>
+      </include>
+    </model>
+
+    <model name="gas_tank">
+      <include>
+        <pose>0.6 -3.7 0 0.0 0.0 0</pose>
+        <uri>model://gas_tank</uri>
+      </include>
+    </model>
+
+    <model name="pallet">
+      <include>
+        <pose>1.0 -1.4 0 0.0 0.0 0.7</pose>
+        <uri>model://pallet</uri>
+      </include>
+    </model>
+
+    <model name="cone">
+      <include>
+        <pose>3.0 -3.0 0.05 0.0 0.0 0.7</pose>
+        <uri>model://cone</uri>
+      </include>
+    </model>
+
+    <model name="bucket">
+      <include>
+        <pose>3.0 -3.2 0.05 0.0 0.0 0.7</pose>
+        <uri>model://bucket</uri>
+      </include>
+    </model>
+
+    <model name="gas_bottle">
+      <include>
+        <pose>3.2 -3.0 0.05 0.0 0.0 0.7</pose>
+        <uri>model://gas_bottle</uri>
+      </include>
+    </model>
+
+    <model name="house">
+      <include>
+        <pose>1.6 3.7 0.0 0.0 0.0 0</pose>
+        <uri>model://house</uri>
+      </include>
+    </model>
+
+    <model name="andamio">
+      <include>
+        <pose>0.6 1.8 0.0 0.0 0.0 0</pose>
+        <uri>model://scaffolding</uri>
+      </include>
+    </model>
+
+    <model name="street">
+      <include>
+        <pose>-0.9 2.0 0.0 0.0 0.0 0</pose>
+        <uri>model://street</uri>
+      </include>
+    </model>
+
+    <model name="pile">
+      <include>
+        <pose>8 -2.0 0.0 0.0 0.0 0</pose>
+        <uri>model://pile</uri>
+      </include>
+    </model>
+
+    <population name="tree_population">
+      <model name="tree">
+        <include>
+          <uri>model://tree</uri>
+        </include>
+      </model>
+      <pose>8 5 0 0 0 0</pose>
+      <box>
+        <size>4 6 0.01</size>
+      </box>
+      <model_count>16</model_count>
+      <distribution>
+        <type>random</type>
+      </distribution>
+    </population>
+
+    <population name="tree_population2">
+      <model name="tree2">
+        <include>
+          <uri>model://tree</uri>
+        </include>
+      </model>
+      <pose>3 7 0 0 0 0</pose>
+      <box>
+        <size>6 4 0.01</size>
+      </box>
+      <model_count>16</model_count>
+      <distribution>
+        <type>random</type>
+      </distribution>
+    </population>
+
+
+    <population name="barrier">
+      <model name="fenceb">
+        <include>
+          <uri>model://fenceb</uri>
+        </include>
+      </model>
+      <pose>1.25 -0.5 0 0 0 0</pose>
+      <distribution>
+        <type>grid</type>
+        <rows>1</rows>
+        <cols>4</cols>
+        <step>0.63 0 0</step>
+      </distribution>
+    </population>
+
+    <population name="barrier2">
+      <model name="fenceb2">
+        <include>
+          <uri>model://fenceb</uri>
+        </include>
+      </model>
+      <pose>4.17 -0.5 0 0 0 0</pose>
+      <distribution>
+        <type>grid</type>
+        <rows>1</rows>
+        <cols>3</cols>
+        <step>0.62 0 0</step>
+      </distribution>
+    </population>
+
+    <include>
+      <pose>3.5 -3.5 0.01 0.0 0.0 1.54</pose>
+      <uri>model://turtlebot3_burger_0</uri>
+    </include>
+    
+    <include>
+      <pose>3.7 -3.5 0.01 0.0 0.0 1.54</pose>
+      <uri>model://turtlebot3_burger_1</uri>
+    </include>
+
+  </world>
+</sdf>

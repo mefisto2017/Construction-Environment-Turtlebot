@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="fenceb">
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <pose>0 0 0 0 0 1.570796327</pose>
+          <geometry>
+            <mesh>
+              <uri>model://fenceb/meshes/fenceb.dae</uri>
+              <scale>0.5 0.5 0.5</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <pose>0 -0.065 0.2 0 0 0</pose>
+          <geometry>
+            <box>
+             <size>0.63 0.22 0.4</size>
+            </box>
+          </geometry>
+       </collision>      
+      </link>   
+  </model>
+</sdf>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="madera">
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://madera/meshes/madera.dae</uri>
+              <scale>0.5 0.5 0.5</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0.15 0 0 0</pose>
+          <geometry>
+            <box>
+             <size>0.5 2.27 0.3</size>
+            </box>
+          </geometry>
+       </collision>     
+      </link>   
+  </model>
+</sdf>
+

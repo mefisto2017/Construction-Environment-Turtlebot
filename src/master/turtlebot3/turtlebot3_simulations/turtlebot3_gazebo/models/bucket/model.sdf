@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="bucket">
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://bucket/meshes/bucket.dae</uri>
+              <scale>0.1 0.1 0.1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose frame=''>0 0 0.085 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.19</length>
+              <radius>0.105</radius>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>  
+  </model>
+</sdf>
+
