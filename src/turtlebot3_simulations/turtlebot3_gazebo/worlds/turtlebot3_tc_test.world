@@ -11,13 +11,17 @@
     </camera>
   </gui>
 
-      <!--<scene>
-      <sky>
-        <clouds>
-          <speed>12</speed>
-        </clouds>
-      </sky>
-    </scene> -->
+  <scene>
+    <sky>
+      <clouds>
+        <speed>12</speed>
+      </clouds>
+    </sky>
+  </scene>
+
+  <include>
+    <uri>model://sun</uri>
+  </include>
 
   <include>
     <uri>model://my_ground_plane</uri>
