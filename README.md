@@ -15,7 +15,7 @@ sudo apt-get install ros-humble-gazebo-ros-pkgs
 To install this repository on your home folder:
 ```sh
 cd ~
-git clone git@github.com:mefisto2017/Construction-Environment-Turtlebot.git
+git clone git@github.com:pvela2017/Construction-Environment-Turtlebot.git
 cd Construction-Environment-Turtlebot
 colcon build
 ```
